@@ -33,10 +33,7 @@ def main():
     # A TurtleWindow works "behind the scenes" to enable Turtle movement
     window = rg.TurtleWindow()
 
-    turtle1()
-    turtle3()
-    turtle2()
-    turtle2()
+
     turtle4()
 
     window.close_on_mouse_click()
@@ -106,7 +103,8 @@ def turtle3():
 
 def turtle4():
     chip = rg.SimpleTurtle('turtle')
-    chip.Pen= rg.Pen('bisque1', 300)
+    chip.Pen= rg.Pen('black', 300)
+    chip.Pen.thickness = 300
 
     chip.left(20)
     chip.forward(200)
