@@ -37,6 +37,7 @@ def main():
     turtle3()
     turtle2()
     turtle2()
+    turtle4()
 
     window.close_on_mouse_click()
 
@@ -103,9 +104,21 @@ def turtle3():
     maja.end_fill()
 
 
+def turtle4():
+    chip = rg.SimpleTurtle('turtle')
+    chip.Pen= rg.Pen('bisque1', 300)
+
+    chip.left(20)
+    chip.forward(200)
+    chip.right(156)
+    chip.backward(100)
+
+
+
+
 ########################################################################
 #
-# TODO: 2.
+# DONE: 2.
 #   READ the code above.  Be sure you understand:
 #     -- How many functions are defined above?
 #           (Answer: 4)
