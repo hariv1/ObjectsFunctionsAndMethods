@@ -86,7 +86,7 @@ def circle_and_rectangle():
            150.0
     """
     # ------------------------------------------------------------------
-    # TODO: 3. Implement this function, per its doc-string above.
+    # DONE: 3. Implement this function, per its doc-string above.
     #   -- ANY objects that meet the criteria are fine.
     # Put a statement in   main   to test this function
     #    (by calling this function).
@@ -105,8 +105,22 @@ def circle_and_rectangle():
     c1.attach_to(window)
     r1.attach_to(window)
 
+    print(c1.outline_thickness)
+    print(c1.fill_color)
+    print(c1.center)
+    print(c1.center.x)
+    print(c1.center.y)
+
+    print(r1.outline_thickness)
+    print(r1.fill_color)
+    print(r1.center)
+    print(r1.center.x)
+    print(r1.center.y)
+
     window.render()
     window.close_on_mouse_click()
+
+
 
 
 
