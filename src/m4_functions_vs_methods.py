@@ -174,7 +174,7 @@ def try_methods():
       -- backward  100 units
     """
     ####################################################################
-    # TODO: 3. Implement this function, per its doc-string above.
+    # DONE: 3. Implement this function, per its doc-string above.
     #    Put a statement in   main   to test this function
     #    (by calling this function).
     ####################################################################
@@ -196,7 +196,7 @@ def try_functions():
      -- One jumps to (-50, 50), then moves (while drawing) to (100, 100)
     """
     ####################################################################
-    # TODO: 4. Implement this function, per its doc-string above.
+    # DONE: 4. Implement this function, per its doc-string above.
     #    Put a statement in   main   to test this function
     #    (by calling this function).  IMPORTANT, IMPORTANT, IMPORTANT:
     #    Keep reading the rest of this TO DO before doing the above!
@@ -246,7 +246,7 @@ def try_methods_and_functions():
       8. Draw a SQUARE whose sides are each of length 50.
     """
     ####################################################################
-    # TODO: 5. Implement this function, per its doc-string above.
+    # DONE: 5. Implement this function, per its doc-string above.
     #    Put a statement in   main   to test this function
     #    (by calling this function).  IMPORTANT, IMPORTANT, IMPORTANT:
     #    Keep reading the rest of this TO DO before doing the above!
@@ -256,6 +256,30 @@ def try_methods_and_functions():
     # function defined above.  If you don't see why, ** ASK FOR HELP. **
     #
     ####################################################################
+
+    bob = rg.SimpleTurtle()
+    bob.pen= rg.Pen('blue', 5)
+
+    bob.backward(150)
+
+    bob.speed = 1
+    draw_many_squares(bob, 2,100,30)
+
+    bob.speed = 5
+    bob.pen.color = 'red'
+    draw_many_squares(bob, 10, 50 ,15)
+
+    bob.speed = 100
+    bob.pen.thickness = 35
+    draw_many_squares(8, 300, 60)
+
+    bob.pen = rg.Pen('black', 3)
+
+    bob.backward(200)
+
+    bob.draw_circle(30)
+
+    bob.draw_square(50)
 
 
 # ----------------------------------------------------------------------
