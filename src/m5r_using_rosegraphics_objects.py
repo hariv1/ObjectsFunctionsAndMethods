@@ -44,13 +44,13 @@ Authors: David Mutchler, Dave Fisher, Valerie Galluzzi, Amanda Stouder,
 #
 #          -- Write the names of three METHODs that Circle objects have:
 #               (Hint: Use the circle from the example3 function below with the dot trick to let PyCharm help you. )
-#                WRITE_YOUR_ANSWER_HERE,_REPLACING_THIS
+#                attach_to, detach_from, clone
 #
 #          -- Write the names of three INSTANCE VARIABLEs that Circle objects have:
-#                center_point, radius, and fill_color
+#                center, radius, and fill_color
 #
 #     f. What does a RoseWindow RENDER method do?
-#            WRITE_YOUR_ANSWER_HERE,_REPLACING_THIS
+#            The render method draws all objects onto the window
 #
 #     g. When is a RoseWindow close_on_mouse_click method call necessary?  Why?
 #            WRITE_YOUR_ANSWER_HERE,_REPLACING_THIS
@@ -133,6 +133,7 @@ def example3():
     circle = rg.Circle(center_point, radius)
     circle.fill_color = 'green'
     circle.attach_to(window)
+
 
     # ------------------------------------------------------------------
     # Rectangle: needs two opposite corners.
