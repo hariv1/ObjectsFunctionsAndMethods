@@ -84,6 +84,7 @@ def main():
     # When the TODOs ask you to test YOUR code, put YOUR tests here:
     try_methods()
     try_functions()
+    try_methods_and_functions()
 
 
     window.close_on_mouse_click()
@@ -271,7 +272,7 @@ def try_methods_and_functions():
 
     bob.speed = 100
     bob.pen.thickness = 35
-    draw_many_squares(8, 300, 60)
+    draw_many_squares(bob, 8, 300, 60)
 
     bob.pen = rg.Pen('black', 3)
 
