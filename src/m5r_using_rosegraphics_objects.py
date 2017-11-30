@@ -26,7 +26,7 @@ Authors: David Mutchler, Dave Fisher, Valerie Galluzzi, Amanda Stouder,
 #              Down
 #
 #     b. Write a line of code that constructs a basic RoseWindow object:
-#            window = rg.RoseWindow(500,500, 'Basic')
+#            window = rg.RoseWindow()
 #
 #     c. What is the default height of a RoseWindow?
 #        (Type the code shown in your answer above within main to see if PyCharm will help you figure out the answer.
@@ -35,19 +35,19 @@ Authors: David Mutchler, Dave Fisher, Valerie Galluzzi, Amanda Stouder,
 #
 #     d. Write a line of code that construct a RoseWindow object whose height is 100 with any width you choose.
 #         (again try to use PyCharm's hints to help you figure it out)
-#            WRITE_YOUR_ANSWER_HERE,_REPLACING_THIS
+#            window =rg.RoseWindow(100,100)
 #
 #     e. Use the DOT trick to answer the following:
 #
 #          -- Write the names of two types of graphics objects that you can construct OTHER than Circle and Point:
-#                WRITE_YOUR_ANSWER_HERE,_REPLACING_THIS
+#                Square and Polygon
 #
 #          -- Write the names of three METHODs that Circle objects have:
 #               (Hint: Use the circle from the example3 function below with the dot trick to let PyCharm help you. )
 #                WRITE_YOUR_ANSWER_HERE,_REPLACING_THIS
 #
 #          -- Write the names of three INSTANCE VARIABLEs that Circle objects have:
-#                WRITE_YOUR_ANSWER_HERE,_REPLACING_THIS
+#                center_point, radius, and fill_color
 #
 #     f. What does a RoseWindow RENDER method do?
 #            WRITE_YOUR_ANSWER_HERE,_REPLACING_THIS
@@ -65,7 +65,6 @@ Authors: David Mutchler, Dave Fisher, Valerie Galluzzi, Amanda Stouder,
 ########################################################################
 
 import rosegraphics as rg
-
 
 def main():
     """
