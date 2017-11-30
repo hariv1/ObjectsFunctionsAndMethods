@@ -16,6 +16,7 @@ def main():
     # Test your functions by putting calls to them here:
     two_circles()
     circle_and_rectangle()
+    lines()
 
 
 def two_circles():
@@ -149,8 +150,28 @@ def lines():
     -- Waits for the user to press the mouse, then closes the window.
     """
     # ------------------------------------------------------------------
-    # TODO: 4. Implement and test this function.
+    # DONE: 4. Implement and test this function.
     # ------------------------------------------------------------------
+
+    window = rg.RoseWindow()
+
+    line1 = rg.Line(rg.Point(10,10), rg.Point(100,40))
+    line1.thickness = 5
+
+    line2 = rg.Line(rg.Point(20,45), rg.Point(380,200))
+
+    line1.attach_to(window)
+    line2.attach_to(window)
+
+    print(' ')
+    print(line1.get_midpoint())
+    print(line1.get_midpoint().x)
+    print(line1.get_midpoint().y)
+
+
+    window.render()
+    window.close_on_mouse_click()
+
 
 
 # ----------------------------------------------------------------------
