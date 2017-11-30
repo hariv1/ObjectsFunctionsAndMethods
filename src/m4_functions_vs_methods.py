@@ -177,6 +177,14 @@ def try_methods():
     #    (by calling this function).
     ####################################################################
 
+    kate = rg.SimpleTurtle()
+    kate.pen = rg.Pen('brown', 5)
+
+    kate.forward(150)
+    kate.left(90)
+    kate.forward(50)
+    kate.backward(100)
+
 
 def try_functions():
     """
