@@ -45,7 +45,7 @@ def print_math():
     print(x)
 
     y = math.sin(math.pi)
-    print('The sine of PI is,' + str(y))
+    print('The sine of PI is' + ' ' + str(y))
 
 
 def turtle_fun():
