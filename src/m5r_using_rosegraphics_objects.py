@@ -53,7 +53,11 @@ Authors: David Mutchler, Dave Fisher, Valerie Galluzzi, Amanda Stouder,
 #            The render method draws all objects onto the window
 #
 #     g. When is a RoseWindow close_on_mouse_click method call necessary?  Why?
-#            WRITE_YOUR_ANSWER_HERE,_REPLACING_THIS
+#            The close_on_mouse_click method is necessary when a Rose Window is
+#            constructed. This keeps the window from staying on the screen
+#            when the user clicks on it. It allows the user to have control
+#            of the windows he/she views.
+#
 #
 #   ASK QUESTIONS ** NOW ** if you do not understand how the
 #     RoseGraphics graphics system works.
@@ -84,6 +88,7 @@ def example1():
     """ Displays an empty window. """
     window = rg.RoseWindow(500, 300, 'Example 1: An empty window' )
     window.close_on_mouse_click()
+
 
 
 def example2():
